@@ -1,0 +1,211 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+.section {
+  width: 400px;
+  height: 600px;
+  border: 10px solid;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.section__text {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 20%;
+}
+
+.section__title {
+  color: white;
+  z-index: 2;
+}
+
+.section__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40%;
+}
+
+.card__bg {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  height: 200px;
+  background-color: black;
+  border-radius: 15px;
+  z-index: 1;
+}
+.card__chip {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  width: 40%;
+  height: 50%;
+}
+
+.card__bank {
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  padding: 15px;
+  padding-right: 20px;
+  width: 60%;
+  height: 50%;
+}
+
+.card__title {
+  color: white;
+}
+.card__info {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 50%;
+}
+
+.form__logo {
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  width: 30%;
+  height: 50%;
+}
+
+.form__input {
+  background-color: black;
+  border: none;
+  color: white;
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  padding-left: 40px;
+}
+
+.form__input::placeholder {
+  color: white;
+  opacity: 0.5;
+}
+form {
+  width: 100%;
+  height: 100%;
+}
+
+.section__bg {
+  position: absolute;
+  width: 100%;
+  height: 900px;
+  background-color: rgb(0, 102, 255);
+  z-index: 0;
+  rotate: 120deg;
+  top: -500px;
+}
+.card__pretitle {
+  padding-left: 20px;
+  color: white;
+  font-size: 16px;
+}
+.card__pretitle1 {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  color: white;
+  text-align: center;
+}
+.smth {
+  font-size: 10px;
+}
+
+.checkbox-ios {
+  display: inline-block;
+  height: 28px;
+  line-height: 28px;
+  margin-right: 10px;
+  position: relative;
+  vertical-align: middle;
+  font-size: 14px;
+  user-select: none;
+}
+.checkbox-ios .checkbox-ios-switch {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 56px;
+  height: 28px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 25%/50%;
+  vertical-align: top;
+  background: #eee;
+  transition: 0.2s;
+}
+.checkbox-ios .checkbox-ios-switch:before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  transition: 0.15s;
+}
+.checkbox-ios input[type="checkbox"] {
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.checkbox-ios
+  input[type="checkbox"]:not(:disabled):active
+  + .checkbox-ios-switch:before {
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+}
+.checkbox-ios input[type="checkbox"]:checked + .checkbox-ios-switch {
+  background: rgb(0, 170, 255);
+}
+.checkbox-ios input[type="checkbox"]:checked + .checkbox-ios-switch:before {
+  transform: translateX(28px);
+}
+.box {
+  display: flex;
+}
+span {
+  display: flex;
+  flex-direction: column;
+}
+.box {
+  padding-left: 30px;
+  padding-bottom: 10px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.section__submit {
+  margin: 0 auto;
+  width: 100px;
+  height: 25px;
+  border: none;
+  background-color: rgb(0, 102, 255);
+  border-radius: 5px;
+}

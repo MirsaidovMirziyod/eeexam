@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <section class="section">
+      <form class="form" action=" https://echo.htmlacademy.ru">
+        <div class="section__text">
+          <span class="section__bg"></span>
+          <h1 class="section__title">Card</h1>
+        </div>
+        <div class="section__card">
+          <div class="card__bg">
+            <div class="card__chip">
+              <img width="50px" src="./exam/chip.png" alt="" />
+            </div>
+            <div class="card__bank">
+              <h2 class="card__title">Your Bank</h2>
+            </div>
+            <div class="card__info">
+              <input
+                class="form__input"
+                type="number"
+                placeholder="Enter card"
+              />
+              <div class="card__names">
+                <h3 class="card__pretitle1">
+                  <span class="smth">valid</span> 12/99
+                </h3>
+                <h3 class="card__pretitle">MAX MASTERMANN</h3>
+              </div>
+              <div class="form__logo">
+                  <img width="30px" src="" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section__checks">
+          <div class="box">
+            <img width="30px" src="./exam/padlock.png" alt="" />
+            <span>
+              <label for="lock">Lock Card</label>
+              <label for="lock">You can unlock it later</label>
+            </span>
+            <label class="checkbox-ios">
+              <input type="checkbox" id="lock"/>
+              <span class="checkbox-ios-switch"></span>
+            </label>
+          </div>
+          <div class="box">
+            <img width="30px" src="./exam/plane.png" alt="">
+            <span>
+              <label for="abroad">Payments Abroad</label>
+              <label for="abroad">Enable your card abroad</label>
+            </span>
+            <label class="checkbox-ios">
+              <input type="checkbox" id="abroad" checked/>
+              <span class="checkbox-ios-switch"></span>
+            </label>
+          </div>
+          <div class="box">
+            <img width="30px" src="./exam/laptop.png" alt="">
+            <span>
+            <label for="laptop">Online Payments</label>
+            <label for="laptop">Enable online transactions </label>
+            </span>
+            <label class="checkbox-ios">
+              <input type="checkbox" id="laptop"/>
+              <span class="checkbox-ios-switch"></span>
+            </label>
+          </div>
+          <div class="box">
+            <img width="30px" src="./exam/money.png" alt="">
+            <span>
+            <label for="atm">ATM withdrawals</label>
+            <label for="atm">Enable ATM withdrawals</label>
+           </span>
+            <label class="checkbox-ios" >
+              <input type="checkbox" id="atm"/>
+              <span class="checkbox-ios-switch"></span>
+            </span>
+            </label>
+          </div>
+          <div class="btn">
+            <button class="section__submit" type="submit">
+            Submit
+          </button>
+          </div>
+        </div>
+      </form>
+    </section>
+    <script src="./main.js"></script>
+  </body>
+</html>
